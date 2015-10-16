@@ -1,15 +1,26 @@
-title: adaptris.github.io
-description: Adaptris Opensource Components
-sitename: Adaptris
-# baseurl: '/'
-sass:
-  sass_dir: /assets/_sass
-  style: :compressed
-collections:
-  - features
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE.txt
-  - CNAME
+# Site settings
+title: Adaptris
+# email: your-email@domain.com
+url: https://adaptris.github.io
+description: "Adaptris Open Source Components"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Adaptris
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/adaptris
+  - title: linkedin
+    url: https://www.linkedin.com/company/adaptris
+  - title: github
+    url: https://github.com/adaptris
+
+# Build settings
+markdown: kramdown
+permalink: pretty
