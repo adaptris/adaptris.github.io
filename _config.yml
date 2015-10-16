@@ -1,0 +1,15 @@
+title: adaptris.github.io
+description: Adaptris Opensource Components
+sitename: Adaptris
+# baseurl: '/'
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+collections:
+  - features
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - CNAME
