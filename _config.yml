@@ -1,26 +1,36 @@
 # Site settings
 title: Adaptris
-# email: your-email@domain.com
-url: https://adaptris.github.io
-description: "Adaptris Open Source Components"
+description: 'All our open source components'
+url: 'http://adaptris.github.io'
+baseurl: '/'
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary-dark: '#000000'
-  links: '#219ab3'
+author:
+  name: 'Adaptris'
+  # email: josh@joshgerdes.com
+  # twitter_username: joshgerdes
+  # facebook_username: joshgerdes
+  github_username:  adaptris
 
-# Footer settings
-footer: Adaptris
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/adaptris
-  - title: linkedin
-    url: https://www.linkedin.com/company/adaptris
-  - title: github
-    url: https://github.com/adaptris
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-permalink: pretty
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
