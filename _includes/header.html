@@ -8,7 +8,7 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+        <a href="{{ site.baseurl }}" title="Home">
           <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
@@ -20,7 +20,7 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Info</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="Info" class="blog-button">Info</a></li>
             </ul>
           </nav>
 
@@ -84,7 +84,13 @@
                 <span class="label">RSS</span>
               </a>
             </li>
-          
+            
+            <li class="navigation__item">            
+              <a href="https://development.adaptris.net" title="Dev site" target="_blank">
+                <i class="icon icon-skull"></i>
+                <span class="label">Dev</span>
+              </a>
+            </li>          
             </ul>
           </nav>
 
