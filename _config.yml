@@ -1,7 +1,7 @@
 # Site settings
 title: Adaptris
 description: 'All our open source components'
-url: 'http://adaptris.github.io'
+url: 'http://interlok.adaptris.net'
 baseurl: '/'
 
 author:
