@@ -1,6 +1,6 @@
 # Site settings
 title: Adaptris
-description: 'Like Martini Rosso, integration anytime any place anywhere.'
+description: 'Integration anytime any place anywhere.'
 url: 'http://interlok.adaptris.net'
 baseurl: '/'
 
@@ -36,4 +36,4 @@ kramdown:
   hard_wrap: false
 
 gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'LICENSE']
