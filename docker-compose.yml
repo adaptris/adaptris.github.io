@@ -1,0 +1,11 @@
+version: '3'
+services:
+  adaptris.github.io:
+    image: ricalo/jekyll
+    container_name: adaptris.github.io
+    hostname: jekyll
+    ports:
+      - '4000:4000'
+    volumes:
+      - .:/usr/src/app
+    command: [ "server", "--config", "_config.yml,_config_dev.yml", "--watch", "--force_polling" ]

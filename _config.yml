@@ -36,4 +36,4 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'LICENSE']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'LICENSE', 'docker-compose.yml']
