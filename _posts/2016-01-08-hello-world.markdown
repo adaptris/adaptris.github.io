@@ -1,6 +1,7 @@
 ---
 title:  "Hello World"
 date:   2016-01-08 15:04:23
+author: quotidian-ennui
 categories: [adaptris, opensource]
 tags: [adaptris]
 ---
