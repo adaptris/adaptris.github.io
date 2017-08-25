@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
 <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">in {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+      {% if author %}<span class="post-meta__author author">{% if author.image %}<img src="{{author.image}}" alt="profile image for {{author.name}}" class="avatar post-meta__avatar" /> {% endif %}by <a href="{{ author.web }}" target="_blank">{{author.name}}</a></span>{% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
