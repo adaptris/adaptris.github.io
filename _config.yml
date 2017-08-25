@@ -2,7 +2,7 @@
 title: Adaptris
 description: 'Integration anytime any place anywhere.'
 url: 'http://interlok.adaptris.net'
-baseurl: '/'
+baseurl: ''
 
 author:
   name: 'Adaptris'
