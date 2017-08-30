@@ -1,5 +1,5 @@
 @import url(uno.css);
-@import url(monokai.css);
+@import url(solarized-dark.css);
 
 /* Modifications */
 
@@ -13,7 +13,7 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
-.btn, 
+.btn,
 .navigation__item a {
   margin: 5px 0;
   white-space: nowrap;
@@ -53,4 +53,26 @@ pre.highlight code,
   height: 100px;
   border: 3px solid #fff;
   border-radius:100%;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2.0em;
+}
+
+.post-subtitle {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+  font-style: italic;
+  color: #666666;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.content-wrapper {
+	max-width: 1200px;
 }
