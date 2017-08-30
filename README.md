@@ -1,3 +1,15 @@
+# adaptris.github.io
+
+* Clone it
+* Add yourself to _data/authors.yml
+* Write a post
+  * docker-compose up
+  * http://localhost:4000 from a browser, check it out.
+* Push it, see your name up in lights.
+
+
+It's based on the jekyll-uno theme for jekyll; so the original README.md is also applicable :
+
 # jekyll-uno
 
 Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
