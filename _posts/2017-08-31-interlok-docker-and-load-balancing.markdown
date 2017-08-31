@@ -1,5 +1,5 @@
 ---
-title:             "Interlok, Docker and Load balacing"
+title:             "Interlok, Docker and Load balancing"
 description:       "Running Interlok in a docker container with a load balancer."
 date:              2017-08-31 08:00:00
 categories:        [interlok, docker]
@@ -20,7 +20,7 @@ There are many options, but what this post will try and do is start to scratch t
 
 ## Prerequisites
 
-The following prequisites are required:
+The following prerequisites are required:
 
 * A knowledge of Interlok and its configuration files
 * [Docker][install-docker] and [docker-compose][install-docker-compose] installed.
@@ -229,7 +229,7 @@ How this is done isn't covered here but the solution is available in a [github p
 
 ## Summary
 
-Docker is powerful tool that can be used in development lifecycle or as a part of a production stack. Interlok has working use cases of both, personally I've moved most of my development work over to it, creating purpose built images for testing and product demonstrations.
+Docker is powerful tool that can be used in development life-cycle or as a part of a production stack. Interlok has working use cases of both, personally I've moved most of my development work over to it, creating purpose built images for testing and product demonstrations.
 
 The load balancer [`dockercloud/haproxy`][dockercloud-haproxy] is just another example of clever things docker can do for you.
 
