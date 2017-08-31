@@ -76,3 +76,10 @@ h2 {
 .content-wrapper {
 	max-width: 1200px;
 }
+
+.code-caption {
+	padding:10px 10px 10px 10px;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size: .85em;
+	border-bottom: 1px solid #586e75;
+}
