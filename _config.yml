@@ -24,7 +24,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 10
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: rouge
 
