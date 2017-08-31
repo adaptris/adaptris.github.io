@@ -162,7 +162,7 @@ $ docker-compose down
 
 ## Load balancing
 
-The instances can now be scales but they aren't reachable, what is needed is load balancer. Using the image [`dockercloud/haproxy`][dockercloud-haproxy] we can update our `docker-compose.yaml` and introduce one:
+The instances can now be scaled but aren't reachable, what is needed is load balancer. Using the image [`dockercloud/haproxy`][dockercloud-haproxy] we can update our `docker-compose.yaml` and introduce one:
 
 The load balancer is containerised version of haproxy, the magic happens when it dynamically generates the contents of the load balancers configuration with a combination of environment variables and the mounted `/var/run/docker.sock` file.
 
