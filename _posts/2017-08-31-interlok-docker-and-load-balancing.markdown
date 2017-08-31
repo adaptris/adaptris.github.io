@@ -146,11 +146,11 @@ $ docker-compose up --scale interlok=3
 As we can see from the output we have three running instances of Interlok container. These instances are only reachable from within the containers so we can test they are working using the `docker-compose exec` command:
 
 {% highlight console %}
-$ docker-compose exec --index 1 interlok bash  -c "wget -qO-  http://localhost:8081/helloworld"
+$ docker-compose exec --index 1 interlok bash  -c "wget -qO-  http://localhost:8081/hello-world"
 Hello World!
-$ docker-compose exec --index 2 interlok bash  -c "wget -qO-  http://localhost:8081/helloworld"
+$ docker-compose exec --index 2 interlok bash  -c "wget -qO-  http://localhost:8081/hello-world"
 Hello World!
-$ docker-compose exec --index 3 interlok bash  -c "wget -qO-  http://localhost:8081/helloworld"
+$ docker-compose exec --index 3 interlok bash  -c "wget -qO-  http://localhost:8081/hello-world"
 Hello World!
 {% endhighlight %}
 
