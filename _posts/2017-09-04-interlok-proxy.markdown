@@ -6,6 +6,7 @@ comments: false
 tags: [interlok, heroku]
 categories: [interlok, heroku]
 published: true
+author: quotidian-ennui
 description: "Interlok as a reverse proxy for other Interlok instances; not because we can, but because we might have to"
 keywords: "interlok"
 ---
