@@ -9,7 +9,7 @@ mcwarman:
     web: http://warman.io
     image: https://github.com/mcwarman.png?size=22
     
-gerco:
-    name: Gerco Dries
-    web: https://github.com/gerco
-    image: https://github.com/gerco.png?size=22
+#gerco:
+#    name: Gerco Dries
+#    web: https://github.com/gerco
+#    image: https://github.com/gerco.png?size=22

@@ -83,3 +83,8 @@ h2 {
 	font-size: .85em;
 	border-bottom: 1px solid #586e75;
 }
+
+.author__avatar {
+	 border: none;
+	box-shadow: none;
+}

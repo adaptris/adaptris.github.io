@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h2>Authors:</h2>
+<div class="tags"> 
+{% assign authors = site.data.authors %}
+{% for author in authors %} 
+  <a href="#{{author[0]}}">{{ author[1].name }}</a>
+{% endfor %}
+</div>
+
+<!-- iterate through all authors on the site --> 
+{% for author in authors %} 
+  <!-- for each author, create an anchor by using the author as an id --> 
+  <div id="{{author[0]}}">  
+    <h3>{% if author[1].image %}<img src="{{author[1].image}}" alt="profile image for {{author[1].name}}" class="avatar author__avatar" /> {% endif %} {{ author[1].name }} </h3>
+
+    <ul> <!-- create the list of posts -->
+      <!-- iterate through all the posts on the site --> 
+      {% for post in site.posts %} 
+        <!-- list only those which contain the current tag --> 
+        {% if post.author contains author[0] %} 
+            <li>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
