@@ -85,6 +85,35 @@ h2 {
 }
 
 .author__avatar {
-	 border: none;
+	border: none;
 	box-shadow: none;
+  margin-right: 7px;
+}
+
+.author_link {
+	float: none;
+}
+
+.author_link a {
+	color: #333333;
+	padding: 6px 8px 6px 9px;
+	border: none;
+	box-shadow: none;
+}
+
+.author_link a:hover {
+	color: #333333;
+	border: none;
+	box-shadow: none;
+}
+
+.author_link a .icon {
+	display: block;
+	font-size: 1.6em;
+}
+.author_link .label{
+	display:none;
+}
+.author a {
+	color: #e25440;
 }

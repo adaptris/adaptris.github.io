@@ -12,9 +12,8 @@ layout: default
 <!-- iterate through all authors on the site --> 
 {% for author in authors %} 
   <!-- for each author, create an anchor by using the author as an id --> 
-  <div id="{{author[0]}}">  
-    <h3>{% if author[1].image %}<img src="{{author[1].image}}" alt="profile image for {{author[1].name}}" class="avatar author__avatar" /> {% endif %} {{ author[1].name }} </h3>
-
+  <div id="{{author[0]}}">
+    {% if author[1].image %}<img src="{{author[1].image}}" alt="profile image for {{author[1].name}}" class="avatar author__avatar" /> <h3 style="display:inline-block;">{% endif %}{{ author[1].name }}</h3>{% if author[1].web %}<ul class="navigation author_link"><li class="navigation__item"><a href="{{author[1].web}}" title="{{author[0]}} personal site" target="_blank"><i class="icon icon-link"></i><span class="label">{{author[0]}} personal site</span></a></li></ul>{% endif %}
     <ul> <!-- create the list of posts -->
       <!-- iterate through all the posts on the site --> 
       {% for post in site.posts %} 
