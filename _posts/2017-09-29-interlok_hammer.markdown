@@ -22,8 +22,9 @@ More and more examples will pop up from our customers, consultants, or internall
 Some of my favourite Interlok Hammers examples are:
 
 * One that replies to your email with data you requested
-* Another that manages your DevOps pipeline for your Interlok config
+* Another that manages your DevOps pipeline for your Interlok config ([Blog post][interlok-devops])
 * Another that stores speed test results in elastic search ([GitHub project][interlok-speedtest-elastic])
 
 [system-command-executor]: https://development.adaptris.net/javadocs/latest-stable/Interlok-API/com/adaptris/core/services/system/SystemCommandExecutorService.html
+[interlok-devops]: {% post_url 2017-10-02-interlok-cd %}
 [interlok-speedtest-elastic]: https://github.com/quotidian-ennui/interlok-speedtest-elastic
