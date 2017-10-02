@@ -117,3 +117,7 @@ h2 {
 .author a {
 	color: #e25440;
 }
+
+.post img, .excerpt img {
+  vertical-align: middle;
+}
