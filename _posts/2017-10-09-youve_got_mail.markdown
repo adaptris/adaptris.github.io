@@ -85,7 +85,6 @@ All together it looks like this:
           <producer class="multi-attachment-smtp-producer">
             <username>interlok</username>
             <password>password</password>
-            <from><![CDATA[Interlok <interlok@adaptris.net>]]></from>
             <destination class="metadata-destination">
               <key>From</key>
             </destination>
@@ -120,7 +119,7 @@ Also a: ![Interlok Hammer](https://img.shields.io/badge/certified-interlok%20ham
 
 ## Something Extra
 
-If you're a user of the GUI, you could add the following template file into `./ui-resources/config-templates/workflows/`, and add a new workflow using the `you've-got-mail` template:
+If you're a user of the GUI, you could add the following template file into `./ui-resources/config-templates/workflows/`, and add a new workflow using the `You've Got Mail!` template:
 
 <figure class="highlight">
   <figcaption class="g code-caption">./ui-resources/config-templates/workflows/youve_got_mail.xml</figcaption>
@@ -141,8 +140,8 @@ If you're a user of the GUI, you could add the following template file into `./u
 >
   <consumer class="raw-mail-consumer">
     <destination class="configured-consume-destination">
-      <destination wizard-key="pop3-destination" wizard-desc="POP3 Destination" wizard-step="mail" wizard-order="0" wizard-type="string"/>
-      <filter-expression wizard-key="pop3-filter" wizard-desc="POP3 Filter" wizard-step="mail" wizard-order="1" wizard-type="string">SUBJECT=[Rr]eport</filter-expression>
+      <destination wizard-key="imap-pop3-destination" wizard-desc="IMAP/POP3 Destination" wizard-step="mail" wizard-order="0" wizard-type="string"/>
+      <filter-expression wizard-key="imap-pop3-filter" wizard-desc="IMAP/POP3 Filter" wizard-step="mail" wizard-order="1" wizard-type="string">SUBJECT=[Rr]eport</filter-expression>
     </destination>
     <poller class="fixed-interval-poller">
       <poll-interval>
