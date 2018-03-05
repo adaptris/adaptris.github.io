@@ -1,4 +1,19 @@
 # Author details.
+adaptris:
+    name: Adaptris
+    web: http://interlok.adaptris.net/
+    image: /images/profile.jpg
+
+amcgrath:
+    name: Aaron McGrath
+    web: https://github.com/aaron-mcgrath-adp
+    image: https://github.com/aaron-mcgrath-adp.png?size=22
+
+gerco:
+    name: Gerco Dries
+    web: https://github.com/gerco
+    image: https://github.com/gerco.png?size=22
+
 quotidian-ennui:
     name: Lewin Chan
     web: https://quotidian-ennui.github.io
@@ -8,13 +23,3 @@ mcwarman:
     name: Matthew Warman
     web: http://warman.io
     image: https://github.com/mcwarman.png?size=22
-
-gerco:
-    name: Gerco Dries
-    web: https://github.com/gerco
-    image: https://github.com/gerco.png?size=22
-
-amcgrath:
-    name: Aaron McGrath
-    web: https://github.com/aaron-mcgrath-adp
-    image: https://github.com/aaron-mcgrath-adp.png?size=22

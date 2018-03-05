@@ -1,7 +1,7 @@
 ---
 title:  "Interlok Documentation"
 date:   2016-01-01 15:04:23
-author: quotidian-ennui
+author: adaptris
 categories: [adaptris, opensource, interlok]
 tags: [interlok]
 ---
