@@ -16,13 +16,13 @@ We've been using Jira for a while now, and they have pretty good integrations wi
 .
 <!-- more -->
 
-If we break down the problem into its constituent parts, then it's a standard integration problem. Receive input file in one format; map/enrich the data; publish it it somewhere else. All we need is a public facing Interlok instance and then we're good to go. We first started off with exactly this; configuring a webhook in Jira for capturing events for a given project. All the Interlok instance did was to save the data to disk so that we would have plenty of sample data to work with. While the [jira documentation](https://developer.atlassian.com/server/jira/platform/webhooks/) is quite comprehensive it doesn't have a lot of example data.
+If we break down the problem into its constituent parts, then it's a standard integration problem; Receive input file in one format; map/enrich the data; publish it somewhere else. All we need is a public facing Interlok instance and then we're good to go. We fstarted off with exactly this; configuring a webhook in Jira for capturing events for a given project. and an Interlok instance that just saved the data to disk so that we would have plenty of sample data to work with. While the [jira documentation](https://developer.atlassian.com/server/jira/platform/webhooks/) is quite comprehensive it doesn't have a lot of example data.
 
 Once we captured enough example data then we're ready to do the work on mapping the data. Nothing beats example data from a real system.
 
 ## Mapping the data
 
-We decided to use [jolt](https://github.com/bazaarvoice/jolt) via our own [optional json component](http://interlok.adaptris.net/interlok-docs/cookbook-json-transform.html) to do the legwork; we decided to map the incoming JSON into an intermediate format, and from there into the required teams format. The reasoning is two-fold; we are discarding a lot of the data as it's not really required for our notifications, and also because of adaptive cards. Adaptive cards are currently in preview, and we wanted to reduce the work if we were to support it.
+We decided to use [jolt](https://github.com/bazaarvoice/jolt) via our own [optional json component](http://interlok.adaptris.net/interlok-docs/cookbook-json-transform.html) to do the legwork; mapping the incoming JSON into an intermediate format, and from there into the required teams format. The reasoning is two-fold; we are discarding a lot of the data as it's not really required for our notifications, and also because of adaptive cards. Adaptive cards are currently in preview, and we wanted to reduce the work if we were to support it.
 
 So mapping an issue_created event means we just want to capture some key bits of information.
 
@@ -162,7 +162,7 @@ If we name the mappings so that they match the webhook events declared in jira t
 
 ## Making it project neutral
 
-If we didn't want to have to setup a new Jira webhook for every project (we generally restrict how/when webhooks are triggered via JQL) then we need a database that maps the project to a Teams webhook URL. The easiest way to do this is with a CSV file and then use [csvjdbc](http://csvjdbc.sourceforge.net/) to treat it as a database. That's pretty simple thing to do then. If we have a file called `teams.csv` in the directory _csvjdbc_ and it contains simply
+If we didn't want to have to setup a new Jira webhook for every project (we generally restrict how/when webhooks are triggered via JQL) then we need a database that maps the project to a Teams webhook URL. The easiest way to do this is with a CSV file and then use [csvjdbc](http://csvjdbc.sourceforge.net/) to treat it as a database. If we have a file called `teams.csv` in the directory _csvjdbc_ and it contains simply
 
 ```
 PROJECT_NAME,TEAMS_URL
@@ -176,7 +176,7 @@ Then we can simply do a select based on the project name and have the correct Te
   <unique-id>Extract Teams URL</unique-id>
   <connection class="jdbc-connection">
     <driver-imp>org.relique.jdbc.csv.CsvDriver</driver-imp>
-    <connect-url>jdbc:relique:csv:./path/to/directory/containing/csv/files</connect-url>
+    <connect-url>jdbc:relique:csv:./csvjdbc</connect-url>
     <always-validate-connection>false</always-validate-connection>
   </connection>
   <statement-creator class="jdbc-configured-sql-statement">
