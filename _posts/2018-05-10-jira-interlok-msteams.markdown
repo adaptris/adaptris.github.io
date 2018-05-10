@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Interlok as a Jira Webhook"
-author: quotidian-ennui
+author: [quotidian-ennui, mcwarman]
 # date: 2018-01-15 11:00
 comments: false
 tags: [interlok, interlok-hammer]
