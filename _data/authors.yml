@@ -3,7 +3,7 @@ adaptris:
     user: adaptris
     name: Adaptris
     web: http://interlok.adaptris.net/
-    image: /images/profile.jpg
+    image: https://development.adaptris.net/images/adaptris-logo.png
 
 amcgrath:
     user: amcgrath
