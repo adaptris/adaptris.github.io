@@ -54,7 +54,7 @@ Source will more often than not be a file, where as preprocessors will fit the n
 
 ![service-tester test]({{ site.baseurl }}/images/posts/testing-service-tester-test.png)
 
-The above example is using the config stored in `/opt/interlok/config/adapter.xml` and extracting the `mapping` service to test using `service-unique-id-preprocessor`.
+The above example is using the config stored in `/opt/interlok/config/adapter.xml` and extracting the `mapping` service as the `service-to-test` using `service-unique-id-preprocessor`.
 
 You can run the config here now to see if you're `service-to-test` gets extracted, it won't do anything useful at this point though.
 
@@ -72,7 +72,7 @@ _TIP: A useful way to check the results of a returned query is to use the `alway
 
 ## Running
 
-Now we can execute out test and we can see whether it worked as expected:
+Now we can execute our test and we can see whether it worked as expected:
 
 **Success**
 
