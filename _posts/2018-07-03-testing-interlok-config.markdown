@@ -84,6 +84,8 @@ Now we can execute out test and we can see whether it worked as expected:
 
 # Conclusion
 
+A working example is available in a [github project](https://github.com/adaptris/interlok-service-tester-example).
+
 This blog post has attempted to scratch the surface on what service-tester has to offer, hopefully you've made it this far and feel a little more educated on the matter.
 
 Once you've created your config you could always consider integrating it as a part of continuous integration pipeline something we hope to cover in future post.
