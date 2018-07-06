@@ -18,7 +18,7 @@ Consider the following configuration fairly simple as far a configuration goes, 
 
 ![testing config]({{ site.baseurl }}/images/posts/testing-config.png)
 
-But the parts that need most testing (or could go most wrong), are the routing and the mapping. Neither of which need connectivity to be tested in isolation.
+But the parts that need most testing (or could go most wrong), is the routing and the mapping. Neither of which need connectivity to be tested in isolation.
 
 The Interlok UI does provide the ability to test steps which is useful when developing, but is not easily repeatable once you've moved on.
 
@@ -48,7 +48,7 @@ Service-tester is split into three parts:
 
 ## Configuring Tests
 
-The first thing you'll need to do when using service-tester is configure you test (Technically it would be a `test-list` but the GUI gives you that for free). The test defines the `service-to-test` this is made up of two parts: Source and Preprocessors.
+The first thing you'll need to do when using service-tester is configure your test (Technically it would be a `test-list` but the GUI gives you that for free). The test defines the `service-to-test` this is made up of two parts: Source and Preprocessors.
 
 Source will more often than not be a file, where as preprocessors will fit the needs of what you need them to do, preprocessors are the bits that you set what to extract and configure in your config.
 
@@ -58,7 +58,7 @@ The above example is using the config stored in `/opt/interlok/config/adapter.xm
 
 You can run the config here now to see if you're `service-to-test` gets extracted, it won't do anything useful at this point though.
 
-_TIP: Other preprocessors include variable substitution or xpath extracts_
+_TIP: Other preprocessors include variable substitution and xpath extracts_
 
 ## Test Cases - Input Messages and Assertions
 
