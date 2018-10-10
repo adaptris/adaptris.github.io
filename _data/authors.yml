@@ -28,3 +28,10 @@ mcwarman:
     name: Matthew Warman
     web: http://warman.io
     image: https://github.com/mcwarman.png?size=22
+    
+higgyfella:
+    user: higgyfella
+    name: Paul Higginson
+    web: https://github.com/higgyfella
+    image: https://github.com/higgyfella.png?size=22    
+    
