@@ -1,7 +1,7 @@
 # Site settings
 title: Adaptris
 description: 'Integration anytime any place anywhere.'
-url: 'http://interlok.adaptris.net'
+url: 'https://interlok.adaptris.net'
 baseurl: ''
 # Everything up to <!-- more --> is included in the excerprt.
 
