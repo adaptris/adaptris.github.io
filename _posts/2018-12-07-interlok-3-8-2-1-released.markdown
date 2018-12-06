@@ -1,6 +1,6 @@
 ---
-title:             "Interlok 3.8.2"
-description:       "Interlok 3.8.2 has been released and is now available for download."
+title:             "Interlok 3.8.2.1"
+description:       "Interlok 3.8.2.1 has been released and is now available for download."
 published:         true
 categories:        [interlok, releases]
 tags:              [interlok, releases]
@@ -8,7 +8,7 @@ author:            higgyfella
 excerpt_separator: <!-- more -->
 ---
 
-[Interlok 3.8.2](https://development.adaptris.net/installers/Interlok/3.8.2/) has reached GA. It is now available for [download](https://development.adaptris.net/installers/Interlok/3.8.2/).
+[Interlok 3.8.2.1](https://development.adaptris.net/installers/Interlok/3.8.2.1/) has reached GA. It is now available for [download](https://development.adaptris.net/installers/Interlok/3.8.2.1/).
 
 <!-- more -->
 
