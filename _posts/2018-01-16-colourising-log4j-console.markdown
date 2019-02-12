@@ -16,11 +16,10 @@ When you're testing your workflows, you're often looking at the console log. I f
 
 <!-- more -->
 
-You need the crashub CLI and crashub shell jars (which you can add to your dependency tree) in your lib directory:
+Log4j2 colourisation automatically works on Unix style terminals (Linux / Mac for instance) so you don't need to do anything special; however on Windows, you need to include the `jansi` artefact which handles ANSI escape code in your console, so you basically need to include that as a dependency in your dependency management.
 
 ```xml
-<dependency org="org.crashub" name="crash.cli" rev="1.3.2" conf="runtime->default"/>
-<dependency org="org.crashub" name="crash.shell" rev="1.3.2" conf="runtime->default"/>
+<dependency org="org.fusesource.jansi" name="jansi" rev="1.17.1" conf="runtime->default"/>
 ```
 
 And then it's just a case of using the `highlight` pattern in your console appender.
@@ -29,7 +28,7 @@ And then it's just a case of using the `highlight` pattern in your console appen
 <Console name="Console" target="SYSTEM_OUT">
   <PatternLayout>
 {% raw %}
-    <Pattern>%highlight{%d [%t] %-5level: %msg%n%throwable}{FATAL=brite white, ERROR=bright bright red, WARN=bright yellow, INFO=bright magenta, DEBUG=bright green, TRACE=bright cyan}</Pattern>
+    <Pattern>%highlight{%d [%t] %-5level: %msg%n%throwable}{FATAL=bright white, ERROR=bright red, WARN=yellow, INFO=magenta, DEBUG=green, TRACE=cyan}</Pattern>
 {% endraw %}
   </PatternLayout>
   <filters>
