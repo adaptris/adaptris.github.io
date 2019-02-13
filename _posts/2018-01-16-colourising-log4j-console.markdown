@@ -36,3 +36,12 @@ And then it's just a case of using the `highlight` pattern in your console appen
   </filters>
 </Console>
 {% endhighlight %}
+
+Note that if you are on Windows and using log4j2 > 2.9.1, then you need to explicitly enable jansi (use _-Dlog4j.skipJansi=false_) when starting up Interlok; alternatively have a `log4j2.component.properties` file on the class path that contains the same setting e.g.
+
+```
+$ cat config/log4j2.component.properties
+log4j.skipJansi=false
+```
+
+
