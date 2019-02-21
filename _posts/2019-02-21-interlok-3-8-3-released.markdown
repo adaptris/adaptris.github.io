@@ -14,10 +14,7 @@ excerpt_separator: <!-- more -->
 
 The key highlights are :
 
-* [Config projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) continued improvements:
-** xpath validation for variables
-** variable token selectors now available on lists and KeyValuePairSets.
-** outputted files now retain order where possible and properties retain users comments, making it easier to work with vcs.
+* [Config projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) continued improvements: xpath validation for variables; variable token selectors now available on lists and KeyValuePairSets; outputted files now retain order where possible and properties retain users comments, making it easier to work with vcs.
 * [Component Search](http://interlok.adaptris.net/interlok-docs/ui-interlok-component-search.html) improvements include added pagination to the results page and style improvements
 * There is a new UI [user-preference](http://interlok.adaptris.net/interlok-docs/ui-user-preferences.html) flag "enable technical preview features" for users who want our UI beta features
 * New ["rest" management component](http://interlok.adaptris.net/interlok-docs/adapter-hosting-rest.html) that replaces interlok-restful-services
