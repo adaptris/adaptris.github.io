@@ -8,7 +8,7 @@ author:            mcwarman
 excerpt_separator: <!-- more -->
 ---
 
-So you've just heard that Interlok is available on [docker hub][interlok-docker-hub] and now your thinking what next?! 
+So you've just heard that Interlok is available on [docker hub][interlok-docker-hub] and now your thinking what next?!
 
 <!-- more -->
 
@@ -120,7 +120,7 @@ $ docker stop interlok-hello-world
 
 ## Scaling with docker-compose
 
-Now we have an image that builds we can use docker-compose to scale it. 
+Now we have an image that builds we can use docker-compose to scale it.
 
 <figure class="highlight">
   <figcaption class="g code-caption">docker-compose.yaml</figcaption>
@@ -237,4 +237,4 @@ The load balancer [`dockercloud/haproxy`][dockercloud-haproxy] is just another e
 [install-docker-compose]: https://docs.docker.com/compose/install/
 [interlok-docker-hub]: https://hub.docker.com/r/adaptris/interlok/
 [dockercloud-haproxy]: https://github.com/docker/dockercloud-haproxy
-[demo]: https://github.com/mcwarman/interlok-load-balanced
+[demo]: https://github.com/adaptris-labs/interlok-load-balanced

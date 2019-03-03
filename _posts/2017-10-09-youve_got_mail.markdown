@@ -7,7 +7,7 @@ tags:              [interlok, interlok-hammer]
 author:            mcwarman
 ---
 
-Many times working in an IT team you'll be asked to provide an extract of data from _System A_ in excel friendly format. I've seen this solved in many different ways<!-- more -->, a couple being: 
+Many times working in an IT team you'll be asked to provide an extract of data from _System A_ in excel friendly format. I've seen this solved in many different ways<!-- more -->, a couple being:
 
 * Giving read only database accounts out to the business
 * Using Excel VB macros with some embedded database connections
@@ -109,11 +109,11 @@ All together it looks like this:
 {% endhighlight %}
 </figure>
 
-A working example is available in a [github project](https://github.com/mcwarman/interlok-mail-to-mail).
+A working example is available in a [github project](https://github.com/adaptris-labs/interlok-mail-to-mail).
 
 ## Summary
 
-A fairly simple solution that uses an existing technology we are all familiar with, with the luxury of no additional front ends and keeping the configuration in a central location. 
+A fairly simple solution that uses an existing technology we are all familiar with, with the luxury of no additional front ends and keeping the configuration in a central location.
 
 Also a: ![Interlok Hammer](https://img.shields.io/badge/certified-interlok%20hammer-red.svg).
 

@@ -16,13 +16,13 @@ Continous deployment is all the rage; Devops is the new shiny. Since I have an I
 
 <!-- more -->
 
-Ultimately you're going to end up with something that logically works like this : 
+Ultimately you're going to end up with something that logically works like this :
 
 ![interlok cd pipeline]({{ site.baseurl }}/images/posts/interlok-cd.png)
 
 ## The remote Interlok instance
 
-You'll need to have JMX enabled on your target Interlok instance; and also have it access configuration stored in version control ([vcs-git][]). Once you've successfully provisioned that instance so that it clones the git repo, and starts up successfully then you can start working on the webhook instance. The Interlok config itself doesn't actually need to do anything; it just needs to be valid so that the remote instance can start; you can probably start with a simple "hello-world" adapter (e.g. [https://github.com/mcwarman/interlok-hello-world/blob/master/config/adapter.xml](https://github.com/mcwarman/interlok-hello-world/blob/master/config/adapter.xml)). Choose your `adapter-unique-id` wisely, as you probably don't want to change that unncessarily as that just causes more complexity.
+You'll need to have JMX enabled on your target Interlok instance; and also have it access configuration stored in version control ([vcs-git][]). Once you've successfully provisioned that instance so that it clones the git repo, and starts up successfully then you can start working on the webhook instance. The Interlok config itself doesn't actually need to do anything; it just needs to be valid so that the remote instance can start; you can probably start with a simple "hello-world" adapter (e.g. [https://github.com/adaptris-labs/interlok-hello-world/blob/master/src/main/interlok/config/adapter.xml](https://github.com/adaptris-labs/interlok-hello-world/blob/master/src/main/interlok/config/adapter.xml)). Choose your `adapter-unique-id` wisely, as you probably don't want to change that unncessarily as that just causes more complexity.
 
 You could use any git hosting provider (for instance [github][] or [bitbucket][]; other repositories are available of course) that supports webhooks. Just setup the webhook and make sure that it's enabled for _push events_; point it at your publicly accessible Interlok instance.
 
