@@ -28,6 +28,20 @@ Later versions of Java 8 will take heed of the _JAVA_TOOL_OPTIONS_ environment v
 
 This can have the benefit of putting all your Interlok temporary files into the same location as well (such as those created by a FileBackedMessageFactory or similar).
 
+## Bonus Speedup
+
+Switch to the in-memory database because you don't care about preserving your preferences, users, widgets across interlok JVM restarts. Your mileage may vary; sometimes it's nice to not have to keep resetting your preferences.
+
+```
+$ cat ui-resources/interlokuidb.properties
+#Mon, 12 Aug 2019 19:26:43 +0100
+
+dataSource.provider=derby
+dataSource.driverClass=org.apache.derby.jdbc.EmbeddedDriver
+dataSource.jdbcURL=jdbc:derby:memory:interlokuidb;create=true
+dataSource.user=interlokuidb
+dataSource.password=interlokuidb
+```
 
 
 
