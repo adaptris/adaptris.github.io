@@ -4,7 +4,7 @@ description:       "Getting gradle builds in windows working."
 published:         true
 categories:        [interlok]
 tags:              [interlok]
-author:            mwarman
+author:            mcwarman
 excerpt_separator: <!-- more -->
 ---
 
