@@ -12,8 +12,6 @@ excerpt_separator: <!-- more -->
 
 <!-- more -->
 
-The key highlights are :
-
 The key highlights are : 
 * The [UI Config page](http://interlok.adaptris.net/interlok-docs/ui-config.html) has had many improvements including:
     * Advanced settings view can be toggled on a per-component basis
