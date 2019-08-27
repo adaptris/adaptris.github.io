@@ -26,5 +26,5 @@ The key highlights are :
 * EDI transforms may now cache definitions via an external cache provider
 * MessageAggregators can now filter messages prior to performing the actual aggregation. 
 
-The formal [change log](https://development.adaptris.net/docs/Interlok/changelog.html) can be found [here](https://development.adaptris.net/docs/Interlok/changelog.html). 
+The formal [change log](https://interlok.adaptris.net/interlok-docs/changelog.html) can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html). 
 Or you can check the usual [sway presentation](https://sway.office.com/7qFLKMbRio7pAPXQ)
