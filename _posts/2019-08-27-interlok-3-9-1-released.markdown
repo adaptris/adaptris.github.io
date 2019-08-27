@@ -16,10 +16,10 @@ The key highlights are :
 
 The key highlights are : 
 * The [UI Config page](http://interlok.adaptris.net/interlok-docs/ui-config.html) has had many improvements including:
-** Advanced settings view can be toggled on a per-component basis
-** When selecting a connection for a producer; we always try to display the most suitable connection first
-** The [UI Config Navigation Tree](http://interlok.adaptris.net/interlok-docs/ui-config-navigation-tree.html) now displays Services (experimental)
-** Improved validation when trying to import existing configuration into a project.
+    * Advanced settings view can be toggled on a per-component basis
+    * When selecting a connection for a producer; we always try to display the most suitable connection first
+    * The [UI Config Navigation Tree](http://interlok.adaptris.net/interlok-docs/ui-config-navigation-tree.html) now displays Services (experimental)
+    * Improved validation when trying to import existing configuration into a project.
 * Microsoft SQL Server is now supported as the [UI database](http://interlok.adaptris.net/interlok-docs/ui-switch-db.html#ms-sqlserver-configuration)
 * A new management component that can cluster Interlok instances via jgroups (interlok-cluster-manager)
 * New interlok-elastic-rest optional component that uses the Elastic RestHighLevelClient. This supersedes all existing elasticsearch components, which have been deprecated and will be removed in a later release.
