@@ -28,16 +28,21 @@ mcwarman:
     name: Matthew Warman
     web: http://warman.io
     image: https://github.com/mcwarman.png?size=22
-    
+
 higgyfella:
     user: higgyfella
     name: Paul Higginson
     web: https://github.com/higgyfella
     image: https://github.com/higgyfella.png?size=22
-    
+
 jameswickham:
     user: jameswickham
     name: James Wickham
     web: https://github.com/jameswickham
     image: https://github.com/jameswickham.png?size=22
-        
+
+albinoloverats:
+    user:  albinoloverats
+    name:  Ashley Anderson
+    web:   https://ashley.anderson.io
+    image: https://albinoloverats.keybase.pub/pictures/CTKV0301.JPG
