@@ -122,5 +122,5 @@ Resolving of metadata via an expression language was introduced in _3.6.2_. At t
 Since we always have an eye on backwards compability and stability; what you have configured will be portable across versions for a long time. Pay attention to _WARNING_ logging in the log file which will tell you if configuration that you're using have been deprecated. If you use the UI, then you'll start getting warnings about the use of deprecated components directly in the UI now. Our deprecation policy is generally at least 2 minor releases (i.e. stuff that was deprecated in 3.5.x, is will be there in 3.7.x, but may be removed in 3.8.x).
 
 
-[^1]: It is somewhat an annoyance that String.format differs slightly from SimpleDateFormat in it's semantics around _M/m_, since I'm always getting it wrong
+[^1]: It is somewhat an annoyance that String.format differs slightly from SimpleDateFormat in its semantics around _M/m_, since I'm always getting it wrong
 [^2]: %uniqueId resolution to give you the unique-id is recent (_3.8.0_)
