@@ -1,0 +1,42 @@
+---
+title:             "Upcoming changes in 3.10"
+description:       "Early notice about things that might break your deployments in 3.10"
+published:         true
+categories:        [interlok]
+tags:              [interlok]
+author:            [amcgrath, quotidian-ennui]
+excerpt_separator: <!-- more -->
+---
+
+_3.9.2_ was internally named [Replacement Killers][] and the next release currently in development also has a similarly themed name; we had a thing for _Chow Yun Fat_ films this year... This next release is intended to be the last release in the 3.9 series, and 3.10.0 may break some existing deployments.
+
+<!-- more -->
+
+### Docker
+
+The key breaking changes are around the docker images that we build and publish on [hub.docker.com][]
+
+* No more openjdk 8-alpine based images
+    * Since openjdk will no longer build 1.8 for non glibc platforms (long story but ultimately because of [this issue][]); this means that the associated docker images that are openjdk+alpine based will be removed. If you still want to use alpine as your base image then you should switch to the zulu variant instead (`snapshot-zulu-alpine` etc.); the official docker openjdk images already make it hard to find the associated alpine release.
+    * Since 3.8.4 we have already started providing alternate images from other providers: `latest-corretto` makes use of Amazon Corretto; `latest-zulu-alpine` uses Azul systems Zulu on alpine etc; so there is already a migration path for you to use now.
+* Docker images will also have a JRE flavour
+    * Where possible, we will also provide a JRE based (rather than JDK) image. In a lot of cases, you don't actually need the full java development stack, since Interlok generally doesn't need any of the JDK features at runtime.
+* Docker images will run as an unprivileged user
+    * To avoid downstream complications during the docker build process; we won't change the current Dockerfiles other than to add a new interlok user. In our entrypoint script we will switch to running the interlok process as an unprivileged user using one of `gosu`, `su-exec` or `chroot --userspec` depending on the underlying image.
+
+### Dependency/Java API changes
+
+* GenerateBeanInfo will be deleted as an annotation.
+    * This annotation will be deleted; it was deprecated in 3.4.0 because of some changes in XStream 1.4.9 around how javabeans were handled. This change should not affect you, since it was primarily used internally where some objects did not follow the standard javabean paradigm as part of our migration to 3.x
+* Migration to junit4 from junit3
+    * BaseCase (from which a lot of tests extend from) is currently a junit3 test case; this will be moved to be a junit4 style test case with annotations. This will affect you if you have custom code; and currently depend on interlok-stubs for your test scaffolding.
+    * We intend to move to junit-jupiter in the future; the junit4 migration should ease the transition pain when that happens.
+* interlok-common will be deprecated and ultimately removed.
+    * interlok-common.jar will still exist to _not break_ dependency management, but it will be empty. All the code that was in interlok-common moves into interlok-core.jar. It will be marked as deprecated and removed in a future release.
+* JMX/JMS will become separate packages
+    * The optional jmx/jms project will be restructured to provide different artefacts based on the underlying JMS provider; e.g. there will be new interlok-jmx-activemq artefact if you are using ActiveMQ as your messaging backbone for JMS.
+
+
+[this issue]: https://github.com/docker-library/openjdk/issues/320
+[hub.docker.com]: https://hub.docker.com
+[Replacement Killers]: https://www.imdb.com/title/tt0120008/
