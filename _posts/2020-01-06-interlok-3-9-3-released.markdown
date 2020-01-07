@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok, releases]
 tags:              [interlok, releases]
 author:            higgyfella
+billboard: /billboards/general-bg8.png
 excerpt_separator: <!-- more -->
 ---
 
