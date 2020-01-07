@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok]
 tags:              [interlok]
 author:            [amcgrath, quotidian-ennui]
+billboard: /billboards/icon-real-time-reporting.png
 excerpt_separator: <!-- more -->
 ---
 
