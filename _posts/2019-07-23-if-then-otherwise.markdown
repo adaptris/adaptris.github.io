@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok]
 tags:              [interlok]
 author:            quotidian-ennui
+billboard: /billboards/icon-orders.png
 excerpt_separator: <!-- more -->
 ---
 

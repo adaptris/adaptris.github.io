@@ -7,6 +7,7 @@ published:          true
 tags:               [interlok, interlok-pgp, gpg, pgp, cryptography]
 categories:         [interlok, interlok-pgp, cryptography]
 keywords:           "interlok, interlok-pgp, gpg, pgp, encrypt, decrypt, sign, verify, public key, private key, cryptography, bouncy castle"
+billboard: /billboards/icon-data-integration.png
 excerpt_separator:  <!-- more -->
 ---
 

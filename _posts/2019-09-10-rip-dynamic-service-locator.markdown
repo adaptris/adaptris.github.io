@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok]
 tags:              [interlok]
 author:            quotidian-ennui
+billboard: /billboards/icon-open-source.png
 excerpt_separator: <!-- more -->
 ---
 
