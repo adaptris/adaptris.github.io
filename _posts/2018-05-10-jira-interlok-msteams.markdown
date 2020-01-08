@@ -9,6 +9,7 @@ categories: [interlok, interlok-hammer]
 published: true
 description: "Using Interlok as a Jira Webhook endpoint"
 keywords: "interlok"
+billboard: /billboards/icon-iot.png
 excerpt_separator: <!-- more -->
 ---
 

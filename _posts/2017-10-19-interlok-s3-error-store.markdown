@@ -9,6 +9,7 @@ categories: [interlok, s3]
 published: true
 description: "Storing failed messages, not on the filesystem, but somewhere else entirely"
 keywords: "interlok"
+billboard: /billboards/icon-single-view.png
 excerpt_separator: <!-- more -->
 ---
 

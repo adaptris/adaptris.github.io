@@ -7,7 +7,7 @@ tags: [interlok, kubernetes, docker]
 description: "Deploying Interlok in Kubernetes via Minikube"
 excerpt_separator: <!-- more -->
 keywords: "interlok, kubernetes, docker"
-
+billboard: /billboards/icon-inventory.png
 ---
 
 The goal of this post is guide you through the steps of deploying Interlok containers in Kubernetes. Minikube is used, Minikube is a tool that makes it easy to run Kubernetes locally. As we all know; Kubernetes is an open-source platform for automating deployment, scaling, and operations of application containers across clusters of hosts, providing container-centric infrastructure.

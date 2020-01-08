@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok]
 tags:              [interlok]
 author:            mcwarman
+billboard: /billboards/icon-data-integration.png
 excerpt_separator: <!-- more -->
 ---
 

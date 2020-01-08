@@ -4,6 +4,7 @@ description:       "When all you have is a hammer; everything looks like a nail.
 date:              2017-09-29 08:00:00
 categories:        [interlok, interlok-hammer]
 tags:              [interlok, interlok-hammer]
+billboard: /billboards/icon-solutions.png
 author:            mcwarman
 ---
 

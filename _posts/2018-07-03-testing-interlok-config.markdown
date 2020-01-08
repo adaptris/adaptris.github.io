@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok, service-tester]
 tags:              [interlok, service-tester]
 author:            mcwarman
+billboard: /billboards/icon-big-data.png
 excerpt_separator: <!-- more -->
 ---
 

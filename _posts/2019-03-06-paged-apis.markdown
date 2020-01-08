@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok]
 tags:              [interlok]
 author:            mcwarman
+billboard: /billboards/icon-single-view.png
 excerpt_separator: <!-- more -->
 ---
 

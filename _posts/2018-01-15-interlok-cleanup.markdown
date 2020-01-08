@@ -9,6 +9,7 @@ categories: [interlok]
 published: true
 description: "Cleaning up temporary files processing; triggering System.gc() periodically"
 keywords: "interlok"
+billboard: /billboards/icon-purchase-to-pay.png
 excerpt_separator: <!-- more -->
 ---
 

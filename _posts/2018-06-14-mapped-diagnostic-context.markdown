@@ -9,6 +9,7 @@ categories: [interlok, log4j]
 published: true
 description: "Adding the message-id to all the logging"
 keywords: "interlok"
+billboard: /billboards/icon-real-time-reporting.png
 excerpt_separator: <!-- more -->
 ---
 

@@ -9,6 +9,7 @@ categories: [interlok, git]
 published: true
 description: "Using Interlok as part of a CD pipeline to update other Interlok instances; eating our own dogfood"
 keywords: "interlok, continuous deployment"
+billboard: /billboards/icon-data-integration.png
 excerpt_separator: <!-- more -->
 ---
 

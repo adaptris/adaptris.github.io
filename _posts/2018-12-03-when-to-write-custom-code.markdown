@@ -4,6 +4,7 @@ description:       "The Interlok framework is easily pluggable the question is w
 date:              2018-12-03 06:00:00
 categories:        [interlok]
 tags:              [interlok]
+billboard: /billboards/icon-iot.png
 author:            mcwarman
 ---
 

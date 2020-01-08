@@ -4,7 +4,9 @@ description:       "Interlok providing real time data exports using email as the
 date:              2017-10-09 08:00:00
 categories:        [interlok, interlok-hammer]
 tags:              [interlok, interlok-hammer]
+billboard: /billboards/icon-iot.png
 author:            mcwarman
+excerpt_separator: <!-- more -->
 ---
 
 Many times working in an IT team you'll be asked to provide an extract of data from _System A_ in excel friendly format. I've seen this solved in many different ways<!-- more -->, a couple being:

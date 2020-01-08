@@ -5,6 +5,7 @@ published:         true
 categories:        [interlok, service-tester]
 tags:              [interlok, service-tester]
 author:            jameswickham
+billboard: /billboards/icon-single-view.png
 excerpt_separator: <!-- more -->
 ---
 

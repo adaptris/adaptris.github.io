@@ -9,6 +9,7 @@ published: true
 author: quotidian-ennui
 description: "Interlok as a reverse proxy for other Interlok instances; not because we can, but because we might have to"
 keywords: "interlok"
+billboard: /billboards/icon-single-view.png
 ---
 
 This is one of those times where having a generic framework is both a blessing and a bit of a curse. One of our customers has a firewall policy that is very strict, only certain ports are open (even internally); the jetty management port had already been opened (8080). We had multiple Interlok instances deployed on the same machine (mainly to partition by logical workunits) and some of those instances were going to expose API endpoints to various other systems. We could have asked for more ports to be open, but there's an overhead and maintenance cost to that.

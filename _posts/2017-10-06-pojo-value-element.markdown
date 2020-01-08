@@ -9,6 +9,7 @@ categories: [interlok, configuration]
 published: true
 description: "How to create 'complex' objects from simple XML configuration"
 keywords: "interlok, continuous deployment"
+billboard: /billboards/icon-open-source.png
 excerpt_separator: <!-- more -->
 ---
 

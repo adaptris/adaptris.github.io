@@ -9,6 +9,7 @@ categories: [interlok, log4j]
 published: true
 description: "Making your log4j console output pretty"
 keywords: "interlok"
+billboard: /billboards/icon-real-time-reporting.png
 excerpt_separator: <!-- more -->
 ---
 

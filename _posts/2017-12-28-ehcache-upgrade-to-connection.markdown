@@ -9,6 +9,7 @@ categories: [interlok, ehcache]
 published: true
 description: "Upgrading from deprecated EHCache configuration"
 keywords: "interlok"
+billboard: /billboards/icon-iot.png
 excerpt_separator: <!-- more -->
 ---
 

@@ -5,6 +5,7 @@ published:         true
 tags: [interlok, interlok-hammer]
 categories: [interlok, interlok-hammer]
 author:            quotidian-ennui
+billboard: /billboards/icon-orders.png
 excerpt_separator: <!-- more -->
 ---
 
