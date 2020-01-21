@@ -7,6 +7,7 @@ published:          true
 tags:               [interlok, multi-payload, messages]
 categories:         [interlok, multi-payload, messages]
 keywords:           "interlok, multi-payload, messages"
+billboard: /billboards/icon-single-view.png
 excerpt_separator:  <!-- more -->
 ---
 
