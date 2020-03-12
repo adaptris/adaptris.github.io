@@ -32,16 +32,16 @@ excerpt_separator: <!-- more -->
     * Prototype support for [multi-payload messages](https://interlok.adaptris.net/interlok-docs/advanced-multi-payload-messages.html)
     * The default Saxon [transformation engine](http://interlok.adaptris.net/interlok-docs/cookbook-xml-transform.html) has been upgraded from 9.8 to 9.9.x
 
-The formal change log can be found here: https://interlok.adaptris.net/interlok-docs/changelog.html
-Or you can check the usual sway presentation: https://sway.office.com/kUvj2NZRqflnEY6W
+The formal change log can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html)
+Or you can check the usual [sway presentation](https://sway.office.com/kUvj2NZRqflnEY6W)
 
 # Screenshots
 
 Optional Components Page :
-![Optional Components 01]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents01.png)
-![Optional Components 02]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents02.png)
-![Optional Components 03]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents03.png)
-![Optional Components 04]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents04.png)
-![Optional Components 05]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents05.png)
-![Optional Components 06]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents06.png)
-![Optional Components 07]({{ site.baseurl }}/images/posts/release-3100/OptionalComponents07.png)
+![Optional Components 01]({{ site.baseurl }}/images/posts/release3100/OptionalComponents01.png)
+![Optional Components 02]({{ site.baseurl }}/images/posts/release3100/OptionalComponents02.png)
+![Optional Components 03]({{ site.baseurl }}/images/posts/release3100/OptionalComponents03.png)
+![Optional Components 04]({{ site.baseurl }}/images/posts/release3100/OptionalComponents04.png)
+![Optional Components 05]({{ site.baseurl }}/images/posts/release3100/OptionalComponents05.png)
+![Optional Components 06]({{ site.baseurl }}/images/posts/release3100/OptionalComponents06.png)
+![Optional Components 07]({{ site.baseurl }}/images/posts/release3100/OptionalComponents07.png)
