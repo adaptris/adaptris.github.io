@@ -35,9 +35,9 @@ In order to deliver our public key to the partner, we had to create a PKCS10 Cer
 
 This is point where _knowing enough about enough things to get yourself into trouble_ is really useful. It's _quite obvious now_ but it wasn't when the delivery team first knocked at my door. If you look at the steps above; then it's apparent that you can mock out the remote endpoint by using an Interlok instance with 2 workflows (i.e. the first workflow does steps 1+2; then second workflow does 3+4) or some variant thereof. That means you can test the plumbing without hitting an external service, incurring costs or banging against security policies. However, of course, for step 4 in the execution chain, we would only have access to a public key, which means that we can't use the `verify(VerifyRequest)` method. This isn't really a big deal since we can just write some custom code using `java.security.Signature` to verify the document.
 
-What was not obvious in this case was how the _MessageType_ changes the behaviour. Since we can't guarantee the size of the message, they were computing the hash, using the `DIGEST` mode when signing, passing in the has as the message parameter of the SignRequest. This actually meant that steps 3+4 didn't work; however it did work if we changed the mode to `RAW`.
+What was not obvious in this case was how the _MessageType_ changes the behaviour. Since we can't guarantee the size of the message, they were computing the hash, using the `DIGEST` mode when signing, passing in the computed hash as the message parameter for the SignRequest. This actually meant that steps 3+4 didn't work; however it did work if we changed the mode to `RAW`.
 
-Of course, this means some digging, and filling out some of the gaps in our understanding of the KMS documentation. It all really starts with openssl **because it always does** since this is the reference implementation everything crypto; if you can make it work with openssl then you just have to understand what you're doing in the language of your choice, since almost everything useful will ultimately expose something similar to openssl.
+Of course, this means some digging, and filling out some of the gaps in our understanding of the KMS documentation. It all really starts with openssl **because it always does** since this is the reference implementation for everything crypto; if you can make it work with openssl then you just have to understand what you're doing in the language of your choice, since almost everything useful will ultimately expose something similar to openssl.
 
 In the following extracts, `digest-raw.sig` is the KMS signature generated in DIGEST mode (not base64 encoded); `raw-raw.sig` is the KMS generated signature using RAW mode. We can ask `openssl rsautl` to do what it can with the files :
 
@@ -75,12 +75,12 @@ $ cat orig.txt | sha256sum | xxd -r -p | hexdump -C
 00000020
 ```
 
-This tells us that _digest-raw.sig_ contains the correct hash, and _raw-raw.sig_ contains an different hash entirely. This leads us to the question _What is the difference between RAW & DIGEST mode in AWS KMS?_ I'm sure that the answer to this question is available in their copious documentation but it can be summed up as :
+This tells us that _digest-raw.sig_ contains the correct hash, and _raw-raw.sig_ contains an different hash entirely. The right question to ask now is: _What is the difference between RAW & DIGEST mode in AWS KMS?_ I'm sure that the answer to this question is available in their copious documentation but it can be summed up as :
 
 * RAW mode re-computes the hash of your message parameter and signs it -> effectively doing openssl dgst -sign (this is actually demonstrated by the hash in _raw-raw.sig_; it appears to be `SHA256(SHA256(orig.txt))`)
 * DIGEST just uses the ByteBuffer that you've sent *as part of the signature* -> effectively doing openssl rsautl -sign
 
-This leaves us with the question _What does this mean for Interlok/java.security.Signature?_ We know that `Signature.verify()` must compute the has of the whatever bytes you've used with `update()` when checking the signature, so we need to adjust our thinking in terms what we're verifying.
+_What does this mean for Interlok/java.security.Signature?_ We know that `Signature.verify()` must compute the hash of the whatever bytes you've used with `update()` when checking the signature, so we need to adjust our thinking in terms what we're verifying.
 
 * If the "hash of the document was signed in DIGEST mode" -> it's the actual payload that you want to verify not the hash of the document.
 * If the "hash of the document was signed in RAW mode" -> then it is the hash that you want to verify, because that is the real document.
