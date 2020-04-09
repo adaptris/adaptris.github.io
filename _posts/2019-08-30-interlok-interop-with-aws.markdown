@@ -2,8 +2,8 @@
 title:             "Testing Interlok interoperability with AWS"
 description:       "Mocking AWS interactions with localstack"
 published:         true
-categories:        [interlok]
-tags:              [interlok]
+categories:        [interlok, aws]
+tags:              [interlok, aws]
 author:            quotidian-ennui
 billboard: /billboards/icon-iot.png
 excerpt_separator: <!-- more -->

@@ -4,8 +4,8 @@ title: "Failed messages not on the filesystem"
 author: quotidian-ennui
 # date: 2017-10-19 13:00
 comments: false
-tags: [interlok, s3]
-categories: [interlok, s3]
+tags: [interlok, s3, aws]
+categories: [interlok, s3, aws]
 published: true
 description: "Storing failed messages, not on the filesystem, but somewhere else entirely"
 keywords: "interlok"
