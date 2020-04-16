@@ -6,6 +6,7 @@ categories:        [interlok, aws]
 tags:              [interlok, aws]
 author:            [quotidian-ennui]
 keywords:          "interlok, aws, kms, encrypt, decrypt, sign, verify, public key, private key, cryptography, bouncy castle"
+billboard: /billboards/icon-open-source.png
 excerpt_separator: <!-- more -->
 ---
 
