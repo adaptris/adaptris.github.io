@@ -13,7 +13,7 @@ All our open source projects love [dependabot](https://dependabot.com) since thi
 
 <!-- more -->
 
-Of course, you can script the hell out of this; it's a bit of shell scripting and making use of some opensource tooling that's already available. Since we know that we can use the github api to add comments (you can probably do this using the GraphQL variant if that's your bag, but since I'm not familiar with it, and Friday afternoon's aren't the best time to learn new things...) know that once we get the correct link, we can do a POST and create a new comment that tells dependabot to do its thing.
+Of course, you can script the hell out of this; it's a bit of shell scripting and making use of some opensource tooling that's already available. Since we know that we can use the github api to add comments (you can probably do this using the GraphQL variant if that's your bag, but since I'm not familiar with it, and Friday afternoon's aren't the best time to learn new things...); once we get the correct link, we can do a POST and create a new comment that tells dependabot to do its thing.
 
 We typically don't have dependabot configured to auto-merge on approval; if we did it would be simpler: we would just use `repo approve log4j` to make everything happen.
 
