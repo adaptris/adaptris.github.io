@@ -1,6 +1,6 @@
 ---
 title:             "Interlok verify feeding sonar"
-description:       "How to use shared-components in service tester"
+description:       "Creating sonar issues based on Interlok config test."
 published:         true
 categories:        [interlok, build-parent, sonar]
 tags:              [interlok, build-parent, sonar]
