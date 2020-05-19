@@ -12,7 +12,7 @@ billboard:         /billboards/icon-solutions.png
 
 Since starting on our journey of maintaining a [build-parent]({% post_url 2019-11-13-parent-gradle-project %}) we've been constantly improving it, and now using a private fork of it in our internal build pipeline.
 
-One rabbit hole I've recently travelled (which has made it as [improvement](https://github.com/adaptris-labs/interlok-build-parent/pull/15)) was trying to feed information from `interlokVerify` into [sonarqube](https://www.sonarqube.org/).
+One rabbit hole I've recently travelled (which has since made it as an [improvement](https://github.com/adaptris-labs/interlok-build-parent/pull/15)) was trying to feed information from `interlokVerify` into [sonarqube](https://www.sonarqube.org/).
 
 <!-- more -->
 
@@ -38,7 +38,7 @@ sonarqube {
 }
 ```
 
-There are working examples using [sonarcloud.io](https://sonarcloud.io): [interlok-hello-world](https://github.com/adaptris-labs/interlok-hello-world/) and [interlok-twilio-sms](https://github.com/adaptris-labs/interlok-twilio-sms).
+There are working examples using [sonarcloud.io](https://sonarcloud.io), found at [interlok-hello-world](https://github.com/adaptris-labs/interlok-hello-world/) and [interlok-twilio-sms](https://github.com/adaptris-labs/interlok-twilio-sms).
 
 ## The Journey
 
@@ -64,7 +64,7 @@ java -jar ./lib/interlok-boot.jar -configtest
 
 Config test attempts to unmarshal the config based on `bootstrap.properties` and executes the component `init()` and `prepare()` for the unmarshaled config.
 
-An output taken from [interlok-hello-world](https://github.com/adaptris-labs/interlok-hello-world) looks something like:
+An output taken from [interlok-hello-world](https://github.com/adaptris-labs/interlok-hello-world) looks something like this:
 
 ```text
 Bootstrap of Interlok 3.10-SNAPSHOT(2020-05-17:04:02:24 UTC) complete
@@ -75,7 +75,7 @@ DEBUG [main] [com.adaptris.core.Adapter}] FailedMessageRetrier []
 Config check only; terminating
 ```
 
-A development team practise is adding logging warning to a components initialisation when its deprecated, or to configuration that may cause unexpected behavior, as seen above.
+A development team practise is adding logging warning during a components initialisation when its deprecated, or to configuration that may cause unexpected behavior, as seen above.
 
 With a combination of redirecting the output from `interlokVerify`:
 
