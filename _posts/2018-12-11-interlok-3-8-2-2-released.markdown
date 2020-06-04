@@ -9,7 +9,7 @@ billboard: /billboards/general-bg3.png
 excerpt_separator: <!-- more -->
 ---
 
-[Interlok 3.8.2.2](https://development.adaptris.net/installers/Interlok/3.8.2.2/) has reached GA. It is now available for [download](https://development.adaptris.net/installers/Interlok/3.8.2.2/).
+[Interlok 3.8.2.2](https://development.adaptris.net/installers/interlok/) has reached GA. It is now available for [download](https://development.adaptris.net/installers/interlok/).
 
 <!-- more -->
 
