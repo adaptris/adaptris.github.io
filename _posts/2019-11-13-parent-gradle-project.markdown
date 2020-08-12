@@ -31,7 +31,7 @@ The usage itself is hopefully self-explanatory, your build.gradle file simply ha
 ext {
   interlokVersion = '3.9.2-RELEASE'
   interlokUiVersion = interlokVersion
-  interlokParentGradle = "https://raw.githubusercontent.com/adaptris-labs/interlok-build-parent/master/parent.gradle"
+  interlokParentGradle = "https://raw.githubusercontent.com/adaptris-labs/interlok-build-parent/master/build.gradle"
 }
 
 configurations {
@@ -70,7 +70,7 @@ It's a preview so there are a few gotchas which we hope to be able to iron out (
 The parent gradle also assumes that you essentially have 2 property files that contain all the variables required for your project:
 
 * `variables.properties` - which will generally contain all the _shared_ properties that aren't environment specific (path locations for instance)
-* `variables-local.{buildEnv}.properties` which contains specific environment entries (e.g. specific hostnames etc)
+* `variables-local-{buildEnv}.properties` which contains specific environment entries (e.g. specific hostnames etc)
 
 You can control the environment via a standard gradle project property: `./gradlew -PbuildEnv=dev build`. What this effectively does is to select `variables-local-dev.properties` and copies it to `variables-local.properties` inside your distribution config dir; if it exists. Since our build environment is _dev_ in this instance, it also copies all the service-tester jars into the lib directory so it is ready to use within the UI.
 
