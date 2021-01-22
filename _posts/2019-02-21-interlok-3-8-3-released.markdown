@@ -15,12 +15,12 @@ excerpt_separator: <!-- more -->
 
 The key highlights are :
 
-* [Config projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) continued improvements: xpath validation for variables; variable token selectors now available on lists and KeyValuePairSets; outputted files now retain order where possible and properties retain users comments, making it easier to work with vcs.
-* [Component Search](http://interlok.adaptris.net/interlok-docs/ui-interlok-component-search.html) improvements include added pagination to the results page and style improvements
-* There is a new UI [user-preference](http://interlok.adaptris.net/interlok-docs/ui-user-preferences.html) flag "enable technical preview features" for users who want our UI beta features
-* New ["rest" management component](http://interlok.adaptris.net/interlok-docs/adapter-hosting-rest.html) that replaces interlok-restful-services
-* Added [JMS](http://interlok.adaptris.net/interlok-docs/cookbook-jms.html) 2.0 support
-* Improved performance for very large [JSON->XML and XML->JSON transformations](http://interlok.adaptris.net/interlok-docs/cookbook-json-transform.html)
+* [Config projects](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project) continued improvements: xpath validation for variables; variable token selectors now available on lists and KeyValuePairSets; outputted files now retain order where possible and properties retain users comments, making it easier to work with vcs.
+* [Component Search](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-interlok-component-search) improvements include added pagination to the results page and style improvements
+* There is a new UI [user-preference](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-user-preferences) flag "enable technical preview features" for users who want our UI beta features
+* New ["rest" management component](https://interlok.adaptris.net/interlok-docs/#/pages/user-guide/adapter-hosting-rest) that replaces interlok-restful-services
+* Added [JMS](https://interlok.adaptris.net/interlok-docs/#/pages/cookbook/cookbook-jms) 2.0 support
+* Improved performance for very large [JSON->XML and XML->JSON transformations](https://interlok.adaptris.net/interlok-docs/#/pages/cookbook/cookbook-json-transform)
 * Support added for interlok-aws to enable withEndpointConfiguration for use with custom endpoints
 * JdbcDataQueryService improvements allow you to have dynamic column translators
 * JdbcDataCaptureService will now give you the number of rows updated

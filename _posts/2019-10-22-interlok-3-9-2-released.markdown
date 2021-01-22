@@ -14,12 +14,12 @@ excerpt_separator: <!-- more -->
 <!-- more -->
 
 The key highlights are :
-* The [UI Config page](http://interlok.adaptris.net/interlok-docs/ui-config.html) has had many improvements including:
+* The [UI Config page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config) has had many improvements including:
     * The validation process now produces warnings for deprecated usage.
     * The settings editor now has a 3 way toggle for viewing different levels of settings (normal, advanced and rare settings) making is easier to configure components.
     * The service testing features now support testing with 'MIME' encoded messages.
-* The [UI Component Search](http://interlok.adaptris.net/interlok-docs/ui-interlok-component-search.html) has been improved to return more accurate results.
-* A new exciting UI Page, the [Interlok Profiler](http://interlok.adaptris.net/interlok-docs/ui-profiler-monitor.html) is now available (you need to enable technical preview features), allowing you analysis runtime performance metrics. 
+* The [UI Component Search](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-interlok-component-search) has been improved to return more accurate results.
+* A new exciting UI Page, the [Interlok Profiler](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-profiler-monitor) is now available (you need to enable technical preview features), allowing you analysis runtime performance metrics. 
 * New services to provide PGP encryption, decryption, signing, and verification (interlok-pgp).
 * FtpConsumers now support a range of FileFilters, including filters that aren't just 'name based'.
 * Interlok now supports JMS 2.0 asynchronous producers with XA transactions.
@@ -28,7 +28,7 @@ The key highlights are :
 * New alterative authentication schemes for AWS.
 * In the interlok-aws-s3 component, the S3 List Operation now supports styles.    
 
-The formal [change log](https://interlok.adaptris.net/interlok-docs/changelog.html) can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html). 
+The formal [change log](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog) can be found [here](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog). 
 Or you can check the usual [sway presentation](https://sway.office.com/wnC9gAv83jPKb6Z6)
 
 # Screenshots

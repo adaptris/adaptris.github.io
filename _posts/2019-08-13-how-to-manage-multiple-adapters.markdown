@@ -17,7 +17,7 @@ So, let's say you want to do just that; you want to use the Interlok UI to manag
 
 ## Secure the JMX interface
 
- By default, the JMX management component uses the reference JMXMP protocol which is passwordless; but that doesn't have to be the case. You can secure it using vanilla password protection, SSL, or any combination thereof; use firewalls to limit traffic to only known hosts on the JMX ports. You can of course use any JMX implementation including our [JMX+JMS](https://interlok.adaptris.net/interlok-docs/advanced-jmx-jms.html). If you opt for the JMS route, then you can leverage the JMS providers's own security layer to secure the endpoints that the JMX implementation is attached to.
+ By default, the JMX management component uses the reference JMXMP protocol which is passwordless; but that doesn't have to be the case. You can secure it using vanilla password protection, SSL, or any combination thereof; use firewalls to limit traffic to only known hosts on the JMX ports. You can of course use any JMX implementation including our [JMX+JMS](https://interlok.adaptris.net/interlok-docs/#/pages/advanced/advanced-jmx-jms). If you opt for the JMS route, then you can leverage the JMS providers's own security layer to secure the endpoints that the JMX implementation is attached to.
 
 ## Have a dedicated monitoring UI instance
 

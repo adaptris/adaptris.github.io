@@ -13,11 +13,11 @@ excerpt_separator: <!-- more -->
 
 <!-- more -->
 
-* Use failed messages in the [UI Config page](http://interlok.adaptris.net/interlok-docs/ui-config.html) testing features
-* [UI Config Projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) new 'Additional Files' tab
-* There is now a 2nd UI [Service Tester Page](http://interlok.adaptris.net/interlok-docs/ui-service-tester.html) available which is a  proof of concept page experimenting with a new style, aiming to make it easier to configure service tester config
-* The [UI Dashboard Page](http://interlok.adaptris.net/interlok-docs/ui-dashboard.html) has new features that make it easier to add clustered Adapter instances
-* [UI Optional Component](http://interlok.adaptris.net/interlok-docs/ui-optional-component-discovery.html) has been improved to make it easier to switch between release and snapshot components
+* Use failed messages in the [UI Config page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config) testing features
+* [UI Config Projects](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project) new 'Additional Files' tab
+* There is now a 2nd UI [Service Tester Page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-service-tester) available which is a  proof of concept page experimenting with a new style, aiming to make it easier to configure service tester config
+* The [UI Dashboard Page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-dashboard) has new features that make it easier to add clustered Adapter instances
+* [UI Optional Component](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-optional-component-discovery) has been improved to make it easier to switch between release and snapshot components
 * Interlok Runtime improvements include:
     * New methods to the Cache interface allowing a Per-item cache expiry where supported by the underlying cache provider
     * New [AWS](https://github.com/adaptris/interlok-aws) Key management services to work with Amazon KMS; sign/verify documents via KMS API
@@ -30,7 +30,7 @@ excerpt_separator: <!-- more -->
     * interlok-shell has been marked as Deprecated, since it isn't supported in Java 11
 * A new exciting experimental installer based on JavaFX that allows you to pre-select optional components that you want to bundle into your installation
 
-The formal change log can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html)
+The formal change log can be found [here](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog)
 Or you can check the usual [sway presentation](https://sway.office.com/4uKpj2IBCi0hyM9V)
 
 # Screenshots

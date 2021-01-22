@@ -15,9 +15,9 @@ excerpt_separator: <!-- more -->
 
 The key highlights are :
 
-* The UI Config Page supports better [variable usages](http://interlok.adaptris.net/interlok-docs/ui-config-project.html#component-settings-modal), such as a mix of multiple variables and texts in a single setting
-* The UI Config Page supports saving & loading of a [UI Project](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) to & from a local file-system directory
-* All the new UI projects will be saved with a [new structured format](http://interlok.adaptris.net/interlok-docs/ui-config-project.html#config-project-format) organised like Maven and Gradle projects
+* The UI Config Page supports better [variable usages](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project?id=component-settings-modal), such as a mix of multiple variables and texts in a single setting
+* The UI Config Page supports saving & loading of a [UI Project](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project) to & from a local file-system directory
+* All the new UI projects will be saved with a [new structured format](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project#?id=config-project-format) organised like Maven and Gradle projects
 * First release of a reworked profiler; this will form the backbone of a new profiler component in the UI
 * New optional component 'interlok-oauth-generic' which will give you a generic access token builder for OAUTH
 * Changes to MongoDB for additional use-cases

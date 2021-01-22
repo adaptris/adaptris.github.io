@@ -58,4 +58,4 @@ dissimilar from the For Each conditional mentioned above.
 End user [documentation][], with example XML configuration, is
 available.
 
-[documentation]: https://interlok.adaptris.net/interlok-docs/advanced-multi-payload-messages.html
+[documentation]: https://interlok.adaptris.net/interlok-docs/#/pages/advanced/advanced-multi-payload-messages

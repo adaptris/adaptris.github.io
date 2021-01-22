@@ -91,4 +91,4 @@ This blog post has attempted to scratch the surface on what service-tester has t
 
 Once you've created your config you could always consider integrating it as a part of continuous integration pipeline something we hope to cover in future post.
 
-See the [javadocs](https://development.adaptris.net/javadocs/latest-stable/optional/service-tester/) and [documentation](http://interlok.adaptris.net/interlok-docs/service-tester-introduction.html) for additional information.
+See the [javadocs](https://development.adaptris.net/javadocs/latest-stable/optional/service-tester/) and [documentation](https://interlok.adaptris.net/interlok-docs/#/pages/service-tester/service-tester-introduction) for additional information.

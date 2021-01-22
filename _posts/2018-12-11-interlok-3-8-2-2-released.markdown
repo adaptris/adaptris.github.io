@@ -15,9 +15,9 @@ excerpt_separator: <!-- more -->
 
 The key highlights are :
 
-* [Config projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) improvements to allow more customisation and easier to use with VCS.
-* The UI [Widgets Page](http://interlok.adaptris.net/interlok-docs/ui-widgets.html) allows the ability to [create widgets that are backed by data from custom endpoints](http://interlok.adaptris.net/interlok-docs/ui-widgets.html#custom-widgets).
-* New UI '[Component Search](http://interlok.adaptris.net/interlok-docs/ui-interlok-component-search.html)' page that allows you to search an Elasticsearch index containing all our Interlok components.
+* [Config projects](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project) improvements to allow more customisation and easier to use with VCS.
+* The UI [Widgets Page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-widgets) allows the ability to [create widgets that are backed by data from custom endpoints](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-widgets?id=custom-widgets).
+* New UI '[Component Search](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-interlok-component-search)' page that allows you to search an Elasticsearch index containing all our Interlok components.
 * New management component that can start and stop an external process on Interlok JVM start-up
 * New optional component 'interlok-json-streaming' that lets you perform streaming operations on JSON
 * Services JsonMapInsert and Upsert now support expression based table names

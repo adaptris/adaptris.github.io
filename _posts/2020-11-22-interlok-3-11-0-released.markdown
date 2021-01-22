@@ -19,10 +19,10 @@ excerpt_separator: <!-- more -->
     * [Json](https://github.com/adaptris/interlok-json) [Schema Validation](https://nexus.adaptris.net/nexus/content/sites/javadocs/com/adaptris/interlok-json/3.11-SNAPSHOT/com/adaptris/core/json/schema/JsonSchemaService.html) now reports more detailed exceptions
     * [JsonTransformService](https://nexus.adaptris.net/nexus/content/sites/javadocs/com/adaptris/interlok-json/3.11-SNAPSHOT/com/adaptris/core/transform/json/JsonTransformService.html) now supports json and yaml
     * [JSON](https://github.com/adaptris/interlok-json) can now be [encoded](https://nexus.adaptris.net/nexus/content/sites/javadocs/com/adaptris/interlok-json-web-token/3.11-SNAPSHOT/com/adaptris/core/jwt/JWTEncoder.html) and [decoded](https://nexus.adaptris.net/nexus/content/sites/javadocs/com/adaptris/interlok-json-web-token/3.11-SNAPSHOT/com/adaptris/core/jwt/JWTDecoder.html) to the [JWT](http://www.jsonwebtoken.io) ([JSON Web Token](https://github.com/adaptris/interlok-json-web-token)) standards
-    * Added support for a [HTTP endpoint](https://github.com/adaptris/interlok-workflow-rest-services) that [Prometheus can scrape for metrics](https://interlok.adaptris.net/interlok-docs/advanced-profiler-prometheus.html)
+    * Added support for a [HTTP endpoint](https://github.com/adaptris/interlok-workflow-rest-services) that [Prometheus can scrape for metrics](https://interlok.adaptris.net/interlok-docs/#/pages/advanced/advanced-profiler-prometheus)
     * Integrated asynchronous publishing via the JCSMP API into the Interlok bridging model.  We now support the basic message payload types of text, bytes, xml-bytes and xml-content.
 
-The formal change log can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html)
+The formal change log can be found [here](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog)
 Or you can check the usual [sway presentation](https://sway.office.com/egFRVY8G8BrHzfv4)
 
 # Screenshots

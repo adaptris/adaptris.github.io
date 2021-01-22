@@ -144,5 +144,5 @@ Could you use something like this to actually run your continuous deployment pip
 [bitbucket]: https://bitbucket.org
 [csvjdbc]: http://csvjdbc.sourceforge.net/index.html
 [websequencediagrams]: https://websequencediagrams.com
-[vcs-git]: http://interlok.adaptris.net/interlok-docs/advanced-vcs-git.html
+[vcs-git]: https://interlok.adaptris.net/interlok-docs/#/pages/advanced/advanced-vcs-git
 [public docker image builds]: https://hub.docker.com/r/adaptris/interlok/tags/

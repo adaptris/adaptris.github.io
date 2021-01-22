@@ -16,15 +16,15 @@ excerpt_separator: <!-- more -->
 The key highlights are :
 
 * You can now add comments to your Interlok Channels, Workflows and Service Collections
-* The [UI Config Page Navigation Tree](http://interlok.adaptris.net/interlok-docs/ui-config-navigation-tree.html) has been improved to display more collection components and now has a 'focus' mode.
+* The [UI Config Page Navigation Tree](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-navigation-tree) has been improved to display more collection components and now has a 'focus' mode.
 * A new MultiPayloadMessageFactory that enables AdaptrisMessage to support multiple payloads
 * Additional Services that allow you to Add payloads to MultiPayloadMessage and switch the active payload for other services to work on
-* The [UI Config page](http://interlok.adaptris.net/interlok-docs/ui-config.html) has improved the opening of shared service collections from the shared components within config
-* The [UI Interlok Profiler](http://interlok.adaptris.net/interlok-docs/ui-profiler-monitor.html) has been updated to allow multiple adapter/channel panels at the same time.
+* The [UI Config page](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config) has improved the opening of shared service collections from the shared components within config
+* The [UI Interlok Profiler](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-profiler-monitor) has been updated to allow multiple adapter/channel panels at the same time.
 * Interlok now supports NATS messaging (optional component interlok-nats)
 * Added support for 'JSON Lines' in json/csv-json/elastic optional components
 
-The formal [change log](https://interlok.adaptris.net/interlok-docs/changelog.html) can be found [here](https://interlok.adaptris.net/interlok-docs/changelog.html). 
+The formal [change log](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog) can be found [here](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog). 
 Or you can check the usual [sway presentation](https://sway.office.com/xmYomnvxfJ6a2En7)
 
 # Screenshots

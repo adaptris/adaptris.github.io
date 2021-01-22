@@ -23,7 +23,7 @@ Once we captured enough example data then we're ready to do the work on mapping 
 
 ## Mapping the data
 
-We decided to use [jolt](https://github.com/bazaarvoice/jolt) via our own [optional json component](http://interlok.adaptris.net/interlok-docs/cookbook-json-transform.html) to do the legwork; mapping the incoming JSON into an intermediate format, and from there into the required teams format. The reasoning is two-fold; we are discarding a lot of the data as it's not really required for our notifications, and also because of adaptive cards. Adaptive cards are currently in preview, and we wanted to reduce the work if we were to support it.
+We decided to use [jolt](https://github.com/bazaarvoice/jolt) via our own [optional json component](https://interlok.adaptris.net/interlok-docs/#/pages/cookbook/cookbook-json-transform) to do the legwork; mapping the incoming JSON into an intermediate format, and from there into the required teams format. The reasoning is two-fold; we are discarding a lot of the data as it's not really required for our notifications, and also because of adaptive cards. Adaptive cards are currently in preview, and we wanted to reduce the work if we were to support it.
 
 So mapping an issue_created event means we just want to capture some key bits of information.
 

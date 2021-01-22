@@ -15,14 +15,14 @@ excerpt_separator: <!-- more -->
 
 The key highlights are :
 
-* [Config projects](http://interlok.adaptris.net/interlok-docs/ui-config-project.html) continued improvements: better UX for loading projects; improved variable usage when moving/coping components with existing variables; and various improvements around the importing existing config with multiple variable sets; and configurability of the x-includes root location.
-* The [Component Search](http://interlok.adaptris.net/interlok-docs/ui-interlok-component-search.html) has been improved so search results now link to the optional component page and vice versa.
+* [Config projects](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-config-project) continued improvements: better UX for loading projects; improved variable usage when moving/coping components with existing variables; and various improvements around the importing existing config with multiple variable sets; and configurability of the x-includes root location.
+* The [Component Search](https://interlok.adaptris.net/interlok-docs/#/pages/ui/ui-interlok-component-search) has been improved so search results now link to the optional component page and vice versa.
 * The [DynamicServiceExecutor](https://development.adaptris.net/javadocs/latest-stable/Interlok-API/com/adaptris/core/services/dynamic/DynamicServiceExecutor.html) has been enhanced and can be used as a simplified [DynamicServiceLocator](https://development.adaptris.net/javadocs/latest-stable/Interlok-API/com/adaptris/core/services/dynamic/DynamicServiceLocator.html) (which has been deprecated).
 * OAuth components have been improved to support the generation of the OAuth Signature for OAUTH1.0 / RFC 5849 (Optional component: interlok-oauth-generic)
 * A new service-list implementation that auto maps against StaX implementations (Optional component: Interlok-stax)
 * New [XML Exception Report service](https://development.adaptris.net/javadocs/latest-stable/Interlok-API/com/adaptris/core/services/exception/XmlExceptionReport.html) that includes workflow ID and Message
 
-The formal [change log](https://development.adaptris.net/docs/Interlok/changelog.html) can be found [here](https://development.adaptris.net/docs/Interlok/changelog.html). 
+The formal [change log](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog) can be found [here](https://interlok.adaptris.net/interlok-docs/#/pages/overview/changelog). 
 Or you can check the usual [sway presentation](https://sway.office.com/53JmWZDwxTJlsU46)
 
 
