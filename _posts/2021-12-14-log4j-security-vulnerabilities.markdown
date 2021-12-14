@@ -31,17 +31,19 @@ An attacker would need to have Log4j2 log a particularly formatted string. Log4j
 
 For Interlok users, we re-released Interlok 4.3.0 with the latest patched Log4j2 binaries. If you downloaded Interlok 4.3.0 before the 13th of Decemember 2021, you should [re-download](https://development.adaptris.net/installers/Interlok/4.3.0/). All 4.x users should upgrade to the latest release.
 
-Note, if you're currently a 3.x user, then there are configuration changes to upgrade to v4.x
+Note, if you're currently a 3.x user, then there are configuration changes to upgrade to 4.x.
+
+If you're using the [interlok-build-parent](https://github.com/adaptris/interlok-build-parent) both the `v3` and `v4`  `build.gradle` have been upgraded to use the latest patched Log4j2 binaries. You should rebuild and redeploy.
 
 If you cannot upgrade, then the best solution is to manually patch all java libraries that start "log4j" in the "./interlok/lib/" and download the latest versions from maven, replacing the older libraries.
 
 For Interlok, these java libraries would be (including download link for the latest patched versions);
-	
+
 * log4j-api.jar - [2.15.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.15.0/log4j-api-2.15.0.jar)
 * log4j-core.jar - [2.15.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.15.0/log4j-core-2.15.0.jar)
 * log4j-slf4j-impl.jar - [2.15.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.15.0/log4j-slf4j-impl-2.15.0.jar)
 * log4j-1.2-api - [2.15.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.15.0/log4j-1.2-api-2.15.0.jar)
-	
+
 Alternatively, if you're running log4j versions 2.10.0 - 2.14.x, then you can disable these lookups by adding the following JVM switch;
 
 `log4j2.formatMsgNoLookups=true`
