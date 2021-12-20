@@ -39,10 +39,10 @@ If you cannot upgrade, then the best solution is to manually patch all java libr
 
 For Interlok, these java libraries would be (including download link for the latest patched versions);
 
-* log4j-api.jar - [2.16.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.16.0/log4j-api-2.16.0.jar)
-* log4j-core.jar - [2.16.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.16.0/log4j-core-2.16.0.jar)
-* log4j-slf4j-impl.jar - [2.16.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.16.0/log4j-slf4j-impl-2.16.0.jar)
-* log4j-1.2-api - [2.16.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.16.0/log4j-1.2-api-2.16.0.jar)
+* log4j-api.jar - [2.17.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.0/log4j-api-2.17.0.jar)
+* log4j-core.jar - [2.17.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.0/log4j-core-2.17.0.jar)
+* log4j-slf4j-impl.jar - [2.17.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.0/log4j-slf4j-impl-2.17.0.jar)
+* log4j-1.2-api - [2.17.0 version](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.17.0/log4j-1.2-api-2.17.0.jar)
 
 Alternatively, if you're running log4j versions 2.10.0 - 2.14.x, then you can disable these lookups by adding the following JVM switch;
 
