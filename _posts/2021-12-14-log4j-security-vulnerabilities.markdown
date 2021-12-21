@@ -29,7 +29,7 @@ An attacker would need to have Log4j2 log a particularly formatted string. Log4j
 
 ## How to fix it?
 
-For Interlok users, we re-released Interlok 4.3.0 with the latest patched Log4j2 binaries. If you downloaded Interlok 4.3.0 before the 13th of Decemember 2021, you should [re-download](https://development.adaptris.net/installers/Interlok/4.3.0/). All 4.x users should upgrade to the latest release.
+For Interlok users, we re-released Interlok 4.3.0 with the latest patched Log4j2 binaries. If you downloaded Interlok 4.3.0 before the 20th of Decemember 2021, you should [re-download](https://development.adaptris.net/installers/Interlok/4.3.0/). All 4.x users should upgrade to the latest release.
 
 Note, if you're currently a 3.x user, then there are configuration changes to upgrade to 4.x.
 
